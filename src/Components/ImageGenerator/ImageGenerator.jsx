@@ -13,7 +13,7 @@ import { json } from 'react-router-dom';
 
 const ImageGenerator = () => {
     
-    const openai = new OpenAI({ apiKey: 'sk-proj-SDvyH39d0IgMhy20zmQVT3BlbkFJQsFSwfVTkZN4tVBSRe7a' ,dangerouslyAllowBrowser: true});
+    const openai = new OpenAI({ apiKey: process.env.OPEN_AI_KEY ,dangerouslyAllowBrowser: true});
 
     const [text, setText] = useState('')
 
